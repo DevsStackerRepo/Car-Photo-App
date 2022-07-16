@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarPhotoApp</title>
+  </head>
+  <body>
+    <h1>CarPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Car Photos</h2>
+        <!-- ODO: Add link to car photos -->
+        <p>
+          Click here to view more <a href="https://www.pexels.com/fr-fr/chercher/car/" target="_blank">car photos</a>
+        </p>
+        <a
+          href="https://www.pexels.com/fr-fr/photo/berline-bmw-bleue-pres-de-l-herbe-verte-170811/"
+        >
+          <img src="./img/cars.jpg" alt="Blue BMW"/>
+        </a>
+      </section>
+      <section>
+          <h2>Car Lists</h2>
+          <h3>American car brands</h3>
+          <ul>
+              <li>Chevrolet</li>
+              <li>Ford Mustang</li>
+              <li>Raptor</li>
+          </ul>
+          <figure>
+              <img src="./img/chevrolet.jpg" alt="chevrolet cars image">
+              <figcaption>Chevrolet is my <em>favourite</em>American Car</figcaption>
+          </figure>
+          <h3>The best car brands in the world</h3>
+          <ol>
+              <li>Toyota</li>
+              <li>Lexus</li>
+              <li>Kia</li>
+              <li>Audi</li>
+              <li>BMW</li>
+              <figure>
+                  <img src="./img/toyota.jpg" alt="toyota cars image">
+                 <figcaption>always in the lead in the <strong>best</strong> car brands.</figcaption>
+              </figure>
+          </ol>
+      </section>
+      <section>
+          <h2>Car Form</h2>
+          <form action="https://www.pexels.com/fr-fr/chercher/car/">
+                <fieldset>
+                    <legend>what kind of cars do you like?</legend>
+                    <label><input id="limousines" value="limousines" name="car-type" type="radio" checked>Limousines</label>
+                    <label><input id="crossovers" value="crossovers" name="car-type" type="radio">Crossovers</label>
+                </fieldset>
+                <fieldset>
+                    <legend>what is your favorite brand</legend>
+                    <input type="checkbox" name="brand-car" id="bmw" value="bmw" checked> <label for="bmw">BMW</label>
+                    <input type="checkbox" name="brand-car" id="ferrari" value="ferrari"> <label for="ferrari">Ferrari</label>
+                    <input type="checkbox" name="brand-car" id="ford-mustang" value="ford-mustang" > <label for="ford-mustang">Ford Mustang</label>
+                </fieldset>
+                <input type="text" placeholder="Car Photos URL" required>
+                <button type="submit">Submit</button>
+          </form>
+      </section>
+    </main>
+    <footer>
+        <p>
+            No Copyright - <a href="#">Muki Design All Website</a>
+        </p>
+    </footer>
+  </body>
+</html>
